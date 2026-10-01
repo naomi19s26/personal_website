@@ -66,8 +66,17 @@
             </div>
           </div>
 
-          <div class="photo-panel" aria-label="Profile photo placeholder">
-            <div class="photo-slot">Your Picture Here</div>
+          <div class="photo-panel" aria-label="Profile photo">
+            <div class="photo-slot">
+              <img
+                src="assets/naomi-portrait.jpg"
+                alt="Naomi Enogieru smiling outdoors"
+                loading="eager"
+                onload="this.nextElementSibling.classList.add('is-hidden')"
+                onerror="this.nextElementSibling.classList.remove('is-hidden')"
+              />
+              <span class="photo-fallback">Your Picture Here</span>
+            </div>
           </div>
         </div>
       </header>
@@ -88,8 +97,9 @@
                   I’m exploring how AI is changing the way we think, learn, and work, and how we can stay engaged with our own thinking while using it.
                 </p>
                 <div class="tag-list">
-                  <span>AI</span>
-                  <span>User Research &amp; Validation</span>
+                  <span>Generative AI</span>
+                  <span>User Research</span>
+                  <span>Interaction Design</span>
                 </div>
               </article>
             </a>
@@ -102,9 +112,9 @@
                   Making private equity more experiential by letting students navigate realistic investment decisions, competition, and tradeoffs.
                 </p>
                 <div class="tag-list">
-                  <span>Simulation</span>
-                  <span>Finance</span>
-                  <span>Learning</span>
+                  <span>EdTech</span>
+                  <span>Gamification</span>
+                  <span>Product Strategy</span>
                 </div>
               </article>
             </a>
@@ -117,9 +127,8 @@
                   Exploring an AI-assisted way to reuse application details across companies, review uncertain form fields, and track every application in one place.
                 </p>
                 <div class="tag-list">
-                  <span>AI</span>
-                  <span>Human-in-the-loop</span>
-                  <span>Job Search</span>
+                  <span>Workflow Automation</span>
+                  <span>Prototyping</span>
                 </div>
               </article>
             </a>
